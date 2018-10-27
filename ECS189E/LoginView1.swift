@@ -46,6 +46,12 @@ class LoginView1: UIViewController, UITextFieldDelegate {
         } else {
             errorInfo.text = phoneNumberPrefix + phoneNumber
             errorInfo.textColor = UIColor.init(red: 0.0, green: 200/255, blue: 0.0, alpha: 1.0)
+            if let numb = errorInfo?.text {
+                toEnterCode(phoneNumber: numb)
+            } else {
+                print("error")
+            }
+            
         }
         
         errorInfo.isHidden = false
@@ -64,5 +70,18 @@ class LoginView1: UIViewController, UITextFieldDelegate {
         asYouTypeFormatter = NBAsYouTypeFormatter(regionCode: "US")
         return true
     }
+    
+    
+    func toEnterCode(phoneNumber: String) {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "verificationView") as! verificationView
+        vc.yophoneNumber = phoneNumber
+        if (navigationController != nil) {
+            navigationController?.pushViewController(vc, animated: true)
+        } else {
+            print("Cannot find navigation controller.")
+        }
+    }
+    
+    
 }
-

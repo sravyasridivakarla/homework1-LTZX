@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qpj-fu-RUR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartoon-sun-draw_658198.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qpj-fu-RUR">
                                 <rect key="frame" x="56.5" y="202.5" width="262.5" height="262.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Qpj-fu-RUR" secondAttribute="height" multiplier="1:1" id="ebA-V4-F0u"/>
@@ -39,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launch.png" width="303" height="303"/>
+        <image name="cartoon-sun-draw_658198.png" width="626" height="500"/>
     </resources>
 </document>
